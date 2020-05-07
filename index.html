@@ -53,13 +53,15 @@ lng=30.30621147155762, lat=59.99050140380859
   </head>
 
   <body style="margin: 0; overflow: hidden;">
+	<div style="width:100%;">
 	<h2>Сайт разработки дополненной реальности</h2>
+	</div>
     <a-scene
       vr-mode-ui="enabled: false"
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-	  <a-box material="color: yellow" gps-entity-place="latitude: 59.99050140380859; longitude: 30.30621147155762;" position="0 1 0"/>
+	  <a-box material="color: yellow" gps-entity-place="latitude: 59.99050140380859; longitude: 30.30621147155762;" position="0 1 0"></a-box>
       <a-text
         value="This content will always face you."
         look-at="[gps-camera]"
